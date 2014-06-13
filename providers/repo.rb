@@ -1,16 +1,18 @@
-def apt_repo_add(name, url, version)
-  filename = "/etc/apt/sources.list.d/#{name}.list"
-  line = "deb #{url} #{version} main"
-  file filename do
+action :add do
+  log "Adding apt repo '#{new_resource.name}'."
+
+  execute "apt-get-update" do
+    command "/usr/bin/apt-get update"
+    action :nothing
+  end
+
+  file "/etc/apt/sources.list.d/#{new_resource.name}.list" do
     action :create
     owner "root"
     group "root"
     mode "0644"
-    content line
-  end
-end
+    content "deb #{new_resource.url} #{new_resource.suite} #{new_resource.component}"
 
-action :add do
-  log "Adding apt repo '#{new_resource.name}'."
-  apt_repo_add(new_resource.name, new_resource.url, new_resource.version)
+    notifies :run, "execute[apt-get-update]", :immediately
+  end
 end
