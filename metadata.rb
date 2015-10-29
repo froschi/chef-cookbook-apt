@@ -1,8 +1,7 @@
 name             'apt'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Thorsten Fischer'
+maintainer_email 'thorsten@froschi.org'
 license          'All rights reserved'
-description      'Installs/Configures apt'
-long_description 'Installs/Configures apt'
-version          '0.1.0'
-
+description      'Installs/Configures apt repos'
+long_description 'Installs/Configures apt repos'
+version          '0.2.0'
