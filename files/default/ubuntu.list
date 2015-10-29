@@ -1,0 +1,20 @@
+deb http://debian.charite.de/ubuntu/ trusty main restricted
+deb http://debian.charite.de/ubuntu/ trusty-updates main restricted
+deb http://debian.charite.de/ubuntu/ trusty universe
+deb http://debian.charite.de/ubuntu/ trusty-updates universe
+deb http://debian.charite.de/ubuntu/ trusty multiverse
+deb http://debian.charite.de/ubuntu/ trusty-updates multiverse
+deb http://debian.charite.de/ubuntu/ trusty-backports main restricted universe multiverse
+deb http://debian.charite.de/ubuntu/ trusty-security main restricted
+deb http://debian.charite.de/ubuntu/ trusty-security universe
+deb http://debian.charite.de/ubuntu/ trusty-security multiverse
+deb-src http://debian.charite.de/ubuntu/ trusty main restricted
+deb-src http://debian.charite.de/ubuntu/ trusty-updates main restricted
+deb-src http://debian.charite.de/ubuntu/ trusty universe
+deb-src http://debian.charite.de/ubuntu/ trusty-updates universe
+deb-src http://debian.charite.de/ubuntu/ trusty multiverse
+deb-src http://debian.charite.de/ubuntu/ trusty-updates multiverse
+deb-src http://debian.charite.de/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://debian.charite.de/ubuntu/ trusty-security main restricted
+deb-src http://debian.charite.de/ubuntu/ trusty-security universe
+deb-src http://debian.charite.de/ubuntu/ trusty-security multiverse

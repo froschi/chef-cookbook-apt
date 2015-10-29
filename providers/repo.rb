@@ -1,4 +1,3 @@
-
 def apt_key_fingerprints
   so = Mixlib::ShellOut.new('apt-key finger').run_command
   so.stdout.split(/\n/).map do |t|
